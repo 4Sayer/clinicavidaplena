@@ -10,6 +10,7 @@ Todos los roles se crean sin contraseña (`NOLOGIN`) y con acceso mínimo en el 
 | `aseguradora` | `SELECT` | `SELECT` | Sin acceso | `SELECT` |
 | `persona`, `paciente` | `SELECT, INSERT, UPDATE` | `SELECT` | `SELECT` | `SELECT` |
 | `medico`, `especialidad`, `medico_especialidad`, `horario_medico` | `SELECT` | `SELECT` | Sin acceso | `SELECT` (`medico`, `especialidad`) |
+| `recepcionista`, `farmaceutico` | Sin acceso | Sin acceso | `SELECT` (`farmaceutico`) | `SELECT` |
 | `cita` | `SELECT, INSERT, UPDATE` | `SELECT` | Sin acceso | `SELECT` |
 | `consulta` (notas clínicas) | **Denegado** (RN-19) | `SELECT, INSERT, UPDATE` | **Denegado** | **Denegado** |
 | `consulta_diagnostico` | **Denegado** (RN-19) | `SELECT, INSERT, UPDATE` | **Denegado** | **Denegado** |
