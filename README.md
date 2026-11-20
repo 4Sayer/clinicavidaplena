@@ -4,7 +4,12 @@ Base de datos centralizada en el esquema `clinica` para gestionar sedes, persona
 
 ## Integrantes
 
-- **Sayer** — Modelado E-R, normalización, scripts SQL (`01` a `08`), pruebas de concurrencia/seguridad, respaldo y documentación.
+- Casanova Antunez Omar
+- Roman Robles Sebastian
+- Romero Felix Michael
+- Montijo Garcia Kennay
+- Ojeda Morales Adrian
+- Tirado Lam Jose Carlos
 
 ## Requisitos e instalación
 
@@ -50,9 +55,11 @@ pg_restore -d clinica_restaurada respaldo/clinica.dump
 
 ## Reparto de trabajo
 
-| Área | Responsable | Entregables |
+| Integrante | Área asignada | Entregables |
 | :--- | :--- | :--- |
-| Modelado y normalización | Sayer | `docs/modelo_er.pdf`, `docs/esquema_relacional.pdf`, `docs/normalizacion.md` |
-| Esquema, datos e índices | Sayer | `sql/01_esquema.sql`, `sql/02_datos.sql`, `sql/03_vistas_indices.sql`, `docs/rendimiento.md` |
-| Lógica en servidor y consultas | Sayer | `sql/04_funciones_procedimientos.sql`, `sql/05_triggers.sql`, `sql/07_consultas.sql` |
-| Transacciones, seguridad y respaldo | Sayer | `sql/06_seguridad.sql`, `sql/08_transacciones.sql`, `docs/permisos.md`, `docs/evidencias/`, `respaldo/clinica.dump` |
+| Casanova Antunez Omar | Modelado E-R, normalización e integración | `docs/modelo_er.pdf`, `docs/esquema_relacional.pdf`, `docs/normalizacion.md`, `ejecutar_todo.sql`, `README.md` |
+| Roman Robles Sebastian | Esquema y carga de datos | `sql/01_esquema.sql`, `sql/02_datos.sql` |
+| Romero Felix Michael | Vistas, índices y rendimiento | `sql/03_vistas_indices.sql`, `docs/rendimiento.md` |
+| Montijo Garcia Kennay | Procedimientos y triggers | `sql/04_funciones_procedimientos.sql`, `sql/05_triggers.sql` |
+| Ojeda Morales Adrian | Consultas y transacciones | `sql/07_consultas.sql`, `sql/08_transacciones.sql` |
+| Tirado Lam Jose Carlos | Seguridad, respaldo y evidencias | `sql/06_seguridad.sql`, `docs/permisos.md`, `docs/evidencias/`, `respaldo/clinica.dump` |
